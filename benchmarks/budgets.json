@@ -1,0 +1,78 @@
+{
+  "encoding": "o200k_base",
+  "description": 40,
+  "rule": 350,
+  "skills": {
+    "fastapi-best-practices": {
+      "entry": 600,
+      "scenarios": {
+        "rule-lookup": {
+          "files": [
+            "SKILL.md",
+            "rules/db-explicit-transactions.md"
+          ],
+          "limit": 900
+        }
+      }
+    },
+    "fastapi-modular-monolith": {
+      "entry": 600,
+      "scenarios": {
+        "module-code": {
+          "files": [
+            "SKILL.md",
+            "references/structure.md"
+          ],
+          "limit": 1200
+        }
+      }
+    },
+    "fastapi-learn": {
+      "entry": 700,
+      "scenarios": {
+        "pick": {
+          "files": [
+            "SKILL.md",
+            "references/boundaries.md",
+            "references/pick.md"
+          ],
+          "limit": 2000
+        },
+        "write": {
+          "files": [
+            "SKILL.md",
+            "references/boundaries.md",
+            "references/write.md",
+            "references/templates.md",
+            "references/config.md"
+          ],
+          "limit": 5000
+        },
+        "done": {
+          "files": [
+            "SKILL.md",
+            "references/boundaries.md",
+            "references/done.md"
+          ],
+          "limit": 1800
+        },
+        "check": {
+          "files": [
+            "SKILL.md",
+            "references/boundaries.md",
+            "references/check.md"
+          ],
+          "limit": 3000
+        },
+        "ship": {
+          "files": [
+            "SKILL.md",
+            "references/boundaries.md",
+            "references/ship.md"
+          ],
+          "limit": 2000
+        }
+      }
+    }
+  }
+}
