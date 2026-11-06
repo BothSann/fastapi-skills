@@ -1,5 +1,7 @@
 # FastAPI skills
 
+[![CI](https://github.com/BothSann/fastapi-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/BothSann/fastapi-skills/actions/workflows/ci.yml)
+
 Agent skills for learning FastAPI, and Python along the way, by typing real projects yourself. You write the app. The agent teaches one step at a time, proves a reference solution, writes the tests, and reviews your code.
 
 The skills teach a modular monolith with clean layers, and they're built to use few tokens.
@@ -70,6 +72,7 @@ These count the instructions an agent reads, not a whole session. During coachin
 - Claude Code, on one Windows 11 machine, with Python 3.15.1 and uv 0.12.0. Other agents should work, but they're untested. macOS and Linux are untested too.
 - A scripted two-lesson trial on a disposable project: a learner script typed each step from the guide, and every step check passed. Its code matched the reference, and the gates caught all 10 mistakes planted on purpose.
 - The full stack, against real containers. Details and known gaps are in [docs/research.md](docs/research.md).
+- This repo's own tests, lint, and token budgets, on every push and PR, on Linux and Windows. This doesn't run a lesson on Linux.
 
 Not tested: a person completing a lesson, real Cloudflare R2, real photos, or production load. Merged-PR cleanup was tested with stubbed `gh` output.
 
