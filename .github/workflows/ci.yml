@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_call:
 
 permissions:
   contents: read
@@ -43,7 +44,7 @@ jobs:
       - name: Lint scripts
         shell: bash
         run: |
-          scripts="skills/fastapi-learn/scripts/learn.py skills/fastapi-modular-monolith/scripts/boundaries.py"
+          scripts="scripts/check_version.py skills/fastapi-learn/scripts/learn.py skills/fastapi-modular-monolith/scripts/boundaries.py"
           uvx ruff@0.17.4 check --select E,F,I,B,UP,ASYNC,BLE,PLC0415,DTZ --line-length 110 --target-version py311 $scripts
           uvx ruff@0.17.4 format --check --line-length 100 --target-version py311 $scripts
           for script in $scripts; do
