@@ -87,6 +87,8 @@ python -m unittest discover -s tests
 cd scripts && npm ci && node check-tokens.mjs
 ```
 
+For branches, versions, and releases, see [RELEASING.md](RELEASING.md).
+
 ## Credits
 
 Some rule ideas came from reading [zhanymkanov/fastapi-best-practices](https://github.com/zhanymkanov/fastapi-best-practices). That repo has no licence, so no text or code was copied from it. Each rule links to its official source.
